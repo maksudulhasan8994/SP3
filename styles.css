@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #bb1919;
+    /*background-image: url(https://img.freepik.com/premium-photo/square-dotted-world-map-blue-background_590041-82.jpg);*/
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-bar {
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 1;
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu-bar a:hover {
+    background-color: #575757;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .menu-icon + .menu-bar {
+    display: flex;
+}
+
+.container {
+    padding: 20px;
+}
+
+.featured {
+    background: linear-gradient(to right, white, #a41212);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.featured img {
+    height: 50px;
+    width: 50px;
+}
+
+.featured h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.button, .see-more-button {
+    background-color: #bb1919;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.button:hover, .see-more-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.ad-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ad-box img {
+    width: 50%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.ad-box h3 {
+    color: #333;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.ad-box p {
+    color: #555;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.ad-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.see-more-button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+.greed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
